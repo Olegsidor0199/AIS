@@ -1,13 +1,13 @@
 function dfs(graph, startNode) {
     let visited = [];
-    
+    let pathLength = 0;
 
     
     function dfsUtil(node, count) {
         visited.push(node);
     
         if (node === endNode) {
-            
+            pathLength = count;
         }
         
         let neighbors = graph[node];
@@ -19,7 +19,7 @@ function dfs(graph, startNode) {
     }
     
     dfsUtil(startNode, 0);
-    
+    return pathLength_;
     
     
     // Пример графа
@@ -30,7 +30,7 @@ function dfs(graph, startNode) {
     D: ['B'],
     E: ['B', 'F'],
     F: ['C', 'E']
-    };
+    }; 
 }
-    
-    console.log("Length of path from A to F: ");
+    let pathLength = dfs(graph, 'A', 'F');
+    console.log("Length of path from A to F: " + pathLength);
