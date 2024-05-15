@@ -21,7 +21,7 @@ function dfs(graph, startNode) {
     dfsUtil(startNode, 0);
     return pathLength_;
     
-    
+    //новый коммент
     // Пример графа
     let graph = {
     A: ['B', 'C'],
