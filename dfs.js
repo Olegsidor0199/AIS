@@ -1,3 +1,4 @@
+
 function dfs(graph, startNode) {
     let visited = [];
     let pathLength = 0;
@@ -21,7 +22,7 @@ function dfs(graph, startNode) {
     dfsUtil(startNode, 0);
     return pathLength_;
     
-    //github
+    //еще коммент
     // Пример графа
     let graph = {
     A: ['B', 'C'],
@@ -30,7 +31,8 @@ function dfs(graph, startNode) {
     D: ['B'],
     E: ['B', 'F'],
     F: ['C', 'E']
-    }; //комментари
+    }; 
 }
     let pathLength = dfs(graph, 'A', 'F');
     console.log("Length of path from A to F: " + pathLength);
+
